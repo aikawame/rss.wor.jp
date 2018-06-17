@@ -3,11 +3,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'rss.wor.jp',
+    title: 'RSS愛好会 - 産経・読売・日経新聞などのRSSフィードを配信',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: '産経・読売・日経新聞などのRSSフィードを配信しています。' },
+      { hid: 'keyword', name: 'keyword', content: 'RSS,新聞,ニュース,産経,SANKEI,読売,YOMIURI,日経,NIKKEI' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -21,6 +22,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': {
+          warnings: false
+        }
+      }
+    },
+    // v2では不要になる
+    vendor: ['axios'],
     /*
     ** Run ESLint on save
     */
@@ -34,5 +45,12 @@ module.exports = {
         })
       }
     }
-  }
-}
+  },
+  css: [
+    '@fortawesome/fontawesome-free-webfonts',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
+    '~/assets/css/default.scss'
+  ]
+};
