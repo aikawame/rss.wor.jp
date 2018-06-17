@@ -29,7 +29,7 @@
               <img class="logo" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" />&nbsp;RSS愛好会
             </p>
             <p class="copyright">
-              &copy; 2018 <a href="https://worklover.wor.jp/">WorkLover</a>
+              &copy; 2014-2018 <a href="https://worklover.wor.jp/">WorkLover</a>
             </p>
           </address>
           <ul class="column is-one-third-desktop">
