@@ -5,7 +5,8 @@
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item is-size-3" href="/">
-              <img src="~/assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />&nbsp;RSS愛好会
+              <img class="icon-rss" src="~/assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+              <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
             </a>
           </div>
           <div class="navbar-menu">
@@ -26,7 +27,8 @@
         <div class="columns">
           <address class="column is-one-third-desktop">
             <p class="author is-size-3" href="/">
-              <img class="logo" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" />&nbsp;RSS愛好会
+              <img class="icon-rss" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+              <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
             </p>
             <p class="copyright">
               &copy; 2014-2018 <a href="https://worklover.wor.jp/">WorkLover</a>
@@ -76,9 +78,12 @@ footer li {
   margin-top: 0.25rem;
 }
 
-.logo {
-  width: 1.75rem;
+.icon-rss,
+.logo-rss {
+  height: 1.75rem;
+  margin-right: 0.5rem;
 }
+
 
 .logo-worklover {
   width: 80px;
