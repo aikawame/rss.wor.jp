@@ -1,64 +1,86 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        rss.wor.jp
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <article class="index">
+    <section class="hero is-medium is-primary">
+      <div class="hero-body has-text-centered">
+        <h1 class="title has-text-weight-normal">
+          <span class="has-text-weight-normal">RSS愛好会</span>
+          <span class="subtitle is-size-4">RSSを未来へ繋げるために</span>
+        </h1>
+        <p>
+          昨今減少しつつあるRSSフィード配信を、本家サイトに代わって行っています。
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="contents">
+      <feed-list/>
+      <section class="notice container">
+        <h2 class="title is-4">
+          <i class="fas fa-rss"></i>&nbsp;注意事項
+        </h2>
+        <ul>
+          <li>
+            本サービスに対する異常なトラフィックを検知した場合、アクセス遮断等の措置を実施する場合があります。
+          </li>
+          <li>
+            記事本文の配信については、著作権やトラフィック等の観点から実施しておりませんのでご了承ください。
+          </li>
+          <li>
+            本サービスは、配信するフィードに運営者からのお知らせを挿入する場合があります。
+          </li>
+        </ul>
+      </section>
+    </section>
+  </article>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import FeedList from '~/components/FeedList.vue'
 
 export default {
   components: {
-    AppLogo
+    FeedList
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.hero {
+  background: linear-gradient(#fa9d39, #e3702d);
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+@media (min-width: 769px) {
+  .hero {
+    background: url("~/assets/img/icon.svg"), linear-gradient(#fa9d39, #e3702d);
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+  }
+
+  h1 .subtitle::before {
+    content: " ─ ";
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+@media (max-width: 768px) {
+  h1 .subtitle {
+    display: block;
+  }
 }
 
-.links {
-  padding-top: 15px;
+.contents {
+  padding: 2rem 0;
+}
+
+@media (max-width: 1087px) {
+  .contents .container {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.notice ul {
+  padding-left: 1rem;
+}
+
+.notice li {
+  list-style-type: square;
 }
 </style>
