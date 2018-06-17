@@ -26,9 +26,11 @@
       <div class="container">
         <div class="columns">
           <address class="column is-one-third-desktop">
-            <p class="author is-size-3" href="/">
-              <img class="icon-rss" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
-              <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
+            <p class="author is-size-3">
+              <a href="/">
+                <img class="icon-rss" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+                <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
+              </a>
             </p>
             <p class="copyright">
               &copy; 2014-2018 <a href="https://worklover.wor.jp/">WorkLover</a>
