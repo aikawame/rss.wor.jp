@@ -3,7 +3,7 @@
     <transition-group name="categories">
       <section class="category" v-for="category in categories" :key="category.label">
         <h2 class="title is-4">
-          <i class="fas fa-rss" aria-hidden="true"></i>&nbsp;{{ category.name }}
+          {{ category.name }}
         </h2>
         <div class="websites">
           <section class="website panel" v-for="website in category.websites" :key="website.label">
@@ -55,20 +55,5 @@ export default {
 .categories-enter,
 .categories-leave-to {
   opacity: 0;
-}
-
-.websites {
-  column-count: 3;
-  margin: 1.5rem 0;
-}
-
-@media (max-width: 768px) {
-  .websites {
-    column-count: 1;
-  }
-}
-
-.website {
-  break-inside: avoid;
 }
 </style>

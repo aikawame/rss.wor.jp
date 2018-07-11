@@ -1,3 +1,6 @@
+/**
+ * Bulma
+ */
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
 
@@ -9,37 +12,124 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $facebook: #4267b2;
 $facebook-invert: findColorInvert($twitter);
+$feedly: #20b446;
+$feedly-invert: findColorInvert($feedly);
+$inoreader: #03a9f4;
+$inoreader-invert: findColorInvert($inoreader);
 
 @import "~bulma/sass/utilities/derived-variables.sass";
 
 $addColors: (
   "twitter": ($twitter, $twitter-invert),
-  "facebook": ($facebook, $facebook-invert)
+  "facebook": ($facebook, $facebook-invert),
+  "feedly": ($feedly, $feedly-invert),
+  "inoreader": ($inoreader, $inoreader-invert)
 );
 
 $colors: map-merge($colors, $addColors);
 
 @import "~bulma/bulma";
 
+/**
+ * ワクラバ共通
+ */
 address {
   font-style: normal;
 }
 
-h2 .fa-rss {
-  color: #e3702d;
-}
+.button {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
 
-@media (max-width: 1087px) {
-  .footer {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  i {
+    font-weight: normal;
   }
 }
 
-.footer a {
-  color: #4a4a4a;
+.contents {
+  padding: 2rem 0;
+
+  @include until($desktop) {
+    padding: 1rem 0;
+
+    .container {
+      padding: 0.5rem 0.75rem;
+    }
+  }
 }
 
-.footer a:hover {
-  color: #3273dc;
+.footer {
+  @include until($desktop) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  a {
+    color: #4a4a4a;
+
+    &:hover {
+      color: #3273dc;
+    }
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+  }
+}
+
+.logo-worklover {
+  width: 80px;
+}
+
+/**
+ * RSS愛好会共通
+ */
+a.panel-block:hover,
+label.panel-block:hover {
+  background: #fec;
+}
+
+h2::before {
+  color: #e3702d;
+  content: "\f09e";
+  font-family: "Font Awesome 5 Free", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(#fa9d39, #e3702d);
+}
+
+.icon-rss,
+.logo-rss {
+  height: 1.75rem;
+  margin-right: 0.5rem;
+}
+
+.panel-icon {
+  color: #e3702d;
+}
+
+.websites {
+  column-count: 3;
+  margin: 1.5rem 0;
+
+  @include until($tablet) {
+    column-count: 1;
+  }
+
+  .website {
+    break-inside: avoid;
+  }
+}
+
+.buttons-feed-reader {
+  @include from($desktop) {
+    right: 0 !important;
+  }
+
+  @include from($tablet) {
+    position: absolute;
+    right: 0.75rem;
+  }
 }

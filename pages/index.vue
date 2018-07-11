@@ -1,5 +1,5 @@
 <template>
-  <article class="index">
+  <article id="index" class="page">
     <section class="hero is-medium is-primary">
       <div class="hero-body has-text-centered">
         <h1 class="title has-text-weight-normal">
@@ -12,10 +12,16 @@
       </div>
     </section>
     <section class="contents">
+      <section class="ad">
+        <adsbygoogle ad-slot="5977540638" />
+      </section>
       <feed-list/>
+      <section class="ad">
+        <adsbygoogle ad-slot="8622502386" />
+      </section>
       <section class="notice container">
         <h2 class="title is-4">
-          <i class="fas fa-rss"></i>&nbsp;注意事項
+          注意事項
         </h2>
         <ul>
           <li>
@@ -43,14 +49,10 @@ export default {
 }
 </script>
 
-<style>
-.hero {
-  background: linear-gradient(#fa9d39, #e3702d);
-}
-
+<style scoped>
 @media (min-width: 769px) {
   .hero {
-    background: url("~/assets/img/icon.svg"), linear-gradient(#fa9d39, #e3702d);
+    background: url("/img/icon.svg"), linear-gradient(#fa9d39, #e3702d);
     background-position-y: 100%;
     background-repeat: no-repeat;
   }
@@ -63,16 +65,6 @@ export default {
 @media (max-width: 768px) {
   h1 .subtitle {
     display: block;
-  }
-}
-
-.contents {
-  padding: 2rem 0;
-}
-
-@media (max-width: 1087px) {
-  .contents .container {
-    padding: 0.5rem 0.75rem;
   }
 }
 

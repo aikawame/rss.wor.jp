@@ -13,7 +13,7 @@ module.exports = {
       { property: 'og:site_name', content: 'RSS愛好会' },
       { property: 'og:title', content: 'RSS愛好会' },
       { property: 'og:url', content: 'https://rss.wor.jp/' },
-      { property: 'og:image', content: 'https://rss.wor.jp/assets/img/ogp.png' },
+      { property: 'og:image', content: 'https://rss.wor.jp/img/ogp.png' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { property: 'og:description', content: '産経・読売・日経新聞などのRSSフィードを配信しています。' },
@@ -33,6 +33,9 @@ module.exports = {
   */
   build: {
     extractCSS: true,
+    filenames: {
+      css: 'app.css?v=[contenthash]'
+    },
     postcss: {
       plugins: {
         'postcss-custom-properties': {
@@ -62,5 +65,11 @@ module.exports = {
     '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
     '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
     '~/assets/css/default.scss'
+  ],
+  modules: [
+    [
+      '@nuxtjs/google-adsense', { id: 'ca-pub-0248545174327416', analyticsUacct: 'UA-1744748-8', analyticsDomainName: 'rss.wor.jp' },
+      '@nuxtjs/google-analytics', { id: 'UA-1744748-8' }
+    ]
   ]
 };

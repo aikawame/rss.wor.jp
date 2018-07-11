@@ -1,19 +1,19 @@
 <template>
-  <article class="page">
+  <div class="default">
     <header>
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item is-size-3" href="/">
-              <img class="icon-rss" src="~/assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
-              <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
+              <img class="icon-rss" src="/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+              <img class="logo-rss" src="/img/logo.svg" alt="RSS愛好会" />
             </a>
           </div>
           <div class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button" href="https://worklover.wor.jp/">
-                  <img class="logo-worklover" src="~/assets/img/logo_worklover.svg" alt="ワクラバ" />
+                  <img class="logo-worklover" src="/img/logo_worklover.svg" alt="ワクラバ" />
                 </a>
               </span>
             </div>
@@ -28,8 +28,8 @@
           <address class="column is-one-third-desktop">
             <p class="author is-size-3">
               <a href="/">
-                <img class="icon-rss" src="~assets/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
-                <img class="logo-rss" src="~/assets/img/logo.svg" alt="RSS愛好会" />
+                <img class="icon-rss" src="/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+                <img class="logo-rss" src="/img/logo.svg" alt="RSS愛好会" />
               </a>
             </p>
             <p class="copyright">
@@ -71,23 +71,5 @@
         </div>
       </div>
     </footer>
-  </article>
+  </div>
 </template>
-
-<style scoped>
-footer li {
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
-}
-
-.icon-rss,
-.logo-rss {
-  height: 1.75rem;
-  margin-right: 0.5rem;
-}
-
-
-.logo-worklover {
-  width: 80px;
-}
-</style>
