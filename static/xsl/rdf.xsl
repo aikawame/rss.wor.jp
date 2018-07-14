@@ -48,10 +48,10 @@
                 <xsl:variable name="channel-link" select="(/rdf:RDF/rss:channel/rss:altlink)" />
                 <p class="buttons-feed-reader buttons">
                   <a class="button is-small is-feedly" href="https://feedly.com/i/subscription/feed%2F{$channel-link}" target="blank">
-                    <i class="fab fa-twitter" />&#160;Feedlyで購読
+                    <i class="icon-feedly" aria-hidden="true" />&#160;Feedlyで購読
                   </a>
                   <a class="button is-small is-inoreader" href="http://www.inoreader.com/feed/{$channel-link}" target="blank">
-                    <i class="fab fa-twitter" />&#160;Inoreaderで購読
+                    <i class="icon-inoreader" aria-hidden="true" />&#160;Inoreaderで購読
                   </a>
                 </p>
               </section>
@@ -110,16 +110,19 @@
                 </ul>
                 <div class="column is-one-third-desktop buttons">
                   <p class="buttons-twitter has-text-right-tablet">
-                    <a class="button is-twitter" href="https://twitter.com/intent/follow?screen_name=aikawame" target="_blank">
-                      <i class="fab fa-twitter" />&#160;フォロー
+                    <a class="button is-twitter" href="https://twitter.com/intent/follow?screen_name=aikawame" target="blank">
+                      <i class="icon-twitter" aria-hidden="true" />&#160;フォロー
                     </a>
-                    <a class="button is-twitter" href="https://twitter.com/share?url=https://rss.wor.jp/&amp;related=aikawame&amp;hashtags=RSS愛好会&amp;text=RSS愛好会" target="_blank">
-                      <i class="fab fa-twitter" />&#160;ツイート
+                    <a class="button is-twitter" href="https://twitter.com/share?url=https://rss.wor.jp/&amp;related=aikawame&amp;hashtags=RSS愛好会&amp;text=RSS愛好会" target="blank">
+                      <i class="icon-twitter" aria-hidden="true" />&#160;ツイート
                     </a>
                   </p>
                   <p class="buttons-facebook has-text-right-tablet">
-                    <a class="button is-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://rss.wor.jp/" target="_blank">
-                      <i class="fab fa-facebook-f" />&#160;シェア
+                    <a class="button is-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://rss.wor.jp/" target="blank">
+                      <i class="icon-facebook-f" aria-hidden="true" />&#160;シェア
+                    </a>
+                    <a class="button is-hateb" href="https://b.hatena.ne.jp/entry/https://rss.wor.jp/" target="blank">
+                      <i class="icon-hateb" aria-hidden="true" />&#160;ブックマーク
                     </a>
                   </p>
                 </div>

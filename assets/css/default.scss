@@ -8,22 +8,25 @@ $family-sans-serif: "Trebuchet MS", sans-serif;
 
 $primary: #fa9d39;
 
-$twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
 $facebook: #4267b2;
-$facebook-invert: findColorInvert($twitter);
+$facebook-invert: findColorInvert($facebook);
 $feedly: #20b446;
 $feedly-invert: findColorInvert($feedly);
+$hateb: #00a4de;
+$hateb-invert: findColorInvert($hateb);
 $inoreader: #03a9f4;
 $inoreader-invert: findColorInvert($inoreader);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
 
 @import "~bulma/sass/utilities/derived-variables.sass";
 
 $addColors: (
-  "twitter": ($twitter, $twitter-invert),
   "facebook": ($facebook, $facebook-invert),
   "feedly": ($feedly, $feedly-invert),
-  "inoreader": ($inoreader, $inoreader-invert)
+  "hateb": ($hateb, $hateb-invert),
+  "inoreader": ($inoreader, $inoreader-invert),
+  "twitter": ($twitter, $twitter-invert)
 );
 
 $colors: map-merge($colors, $addColors);
@@ -93,7 +96,7 @@ label.panel-block:hover {
 h2::before {
   color: #e3702d;
   content: "\f09e";
-  font-family: "Font Awesome 5 Free", sans-serif;
+  font-family: icon, sans-serif;
 }
 
 .hero {
@@ -132,4 +135,8 @@ h2::before {
     position: absolute;
     right: 0.75rem;
   }
+}
+
+.subscription {
+  z-index: 1;
 }

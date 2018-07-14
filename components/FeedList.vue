@@ -12,7 +12,7 @@
             </h3>
             <a class="panel-block" v-for="feed in website.feeds"
                :key="feed.label" :href="'https://assets.wor.jp/rss/rdf/' + website.label + '/' + feed.label + '.rdf'">
-              <span class="panel-icon"><i class="fas fa-rss-square" aria-hidden="true"></i></span>{{ feed.name }}
+              <span class="panel-icon"><i class="icon-rss-square" aria-hidden="true"></i></span>{{ feed.name }}
             </a>
           </section>
         </div>

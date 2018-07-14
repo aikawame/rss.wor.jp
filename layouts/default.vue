@@ -55,16 +55,19 @@
           </ul>
           <div class="column is-one-third-desktop buttons">
             <p class="buttons-twitter has-text-right-tablet">
-              <a class="button is-twitter" href="https://twitter.com/intent/follow?screen_name=aikawame" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;フォロー
+              <a class="button is-twitter" href="https://twitter.com/intent/follow?screen_name=aikawame" target="blank">
+                <i class="icon-twitter" aria-hidden="true"></i>&nbsp;フォロー
               </a>
-              <a class="button is-twitter" href="https://twitter.com/share?url=https://rss.wor.jp/&amp;related=aikawame&amp;hashtags=RSS愛好会&amp;text=RSS愛好会" target="_blank">
-                <i class="fab fa-twitter"></i>&nbsp;ツイート
+              <a class="button is-twitter" href="https://twitter.com/share?url=https://rss.wor.jp/&amp;related=aikawame&amp;hashtags=RSS愛好会&amp;text=RSS愛好会" target="blank">
+                <i class="icon-twitter" aria-hidden="true"></i>&nbsp;ツイート
               </a>
             </p>
             <p class="buttons-facebook has-text-right-tablet">
-              <a class="button is-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://rss.wor.jp/" target="_blank">
-                <i class="fab fa-facebook-f"></i>&nbsp;シェア
+              <a class="button is-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://rss.wor.jp/" target="blank">
+                <i class="icon-facebook-f" aria-hidden="true"></i>&nbsp;シェア
+              </a>
+              <a class="button is-hateb" href="https://b.hatena.ne.jp/entry/https://rss.wor.jp/" target="blank">
+                <i class="icon-hateb" aria-hidden="true"></i>&nbsp;ブックマーク
               </a>
             </p>
           </div>

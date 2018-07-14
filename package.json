@@ -21,7 +21,6 @@
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "babel-eslint": "^8.2.1",
     "bulma": "^0.7.1",
     "eslint": "^4.15.0",
