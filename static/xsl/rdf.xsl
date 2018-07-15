@@ -93,12 +93,12 @@
                 </address>
                 <ul class="column is-one-third-desktop">
                   <li>
-                    <a href="https://worklover.wor.jp/privacy.html">
+                    <a href="https://worklover.wor.jp/privacy">
                       個人情報保護方針
                     </a>
                   </li>
                   <li>
-                    <a href="https://worklover.wor.jp/disclaimer.html">
+                    <a href="https://worklover.wor.jp/disclaimer">
                       免責事項
                     </a>
                   </li>
