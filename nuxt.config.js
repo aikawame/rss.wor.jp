@@ -36,13 +36,6 @@ module.exports = {
     filenames: {
       css: 'app.css?v=[contenthash]'
     },
-    postcss: {
-      plugins: {
-        'postcss-custom-properties': {
-          warnings: false
-        }
-      }
-    },
     // v2では不要になる
     vendor: ['axios'],
     /*

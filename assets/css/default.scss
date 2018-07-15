@@ -31,6 +31,7 @@ $addColors: (
 
 $colors: map-merge($colors, $addColors);
 
+$variable-columns: false;
 @import "~bulma/bulma";
 
 /**
