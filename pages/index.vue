@@ -12,11 +12,18 @@
       </div>
     </section>
     <section class="contents">
-      <section class="ad">
+      <section class="ad container">
         <adsbygoogle ad-slot="5977540638" />
       </section>
-      <feed-list/>
-      <section class="ad">
+      <section class="categories container">
+        <transition-group name="categories">
+          <feed-category v-for="category in categories" :key="category.label" :category="category" />
+        </transition-group>
+        <div class="has-text-centered" v-if="Object.keys(categories).length === 0" aria-hidden="true">
+          <span class="icon loader"></span>
+        </div>
+      </section>
+      <section class="ad container">
         <adsbygoogle ad-slot="8622502386" />
       </section>
       <section class="notice container">
@@ -40,13 +47,25 @@
 </template>
 
 <script>
-import FeedList from '~/components/FeedList.vue'
+import axios from 'axios';
+import FeedCategory from '~/components/FeedCategory.vue'
 
 export default {
   components: {
-    FeedList
+    FeedCategory
+  },
+  data() {
+    return {
+      categories: {},
+      current: 1
+    };
+  },
+  mounted() {
+    axios.get('https://assets.wor.jp/rss/db/show_categories.json').then(res => {
+      this.categories = res.data;
+    });
   }
-}
+};
 </script>
 
 <style scoped>
@@ -66,6 +85,16 @@ export default {
   h1 .subtitle {
     display: block;
   }
+}
+
+.categories-enter-active,
+.catgories-leave-active {
+  transition: opacity 0.5s;
+}
+
+.categories-enter,
+.categories-leave-to {
+  opacity: 0;
 }
 
 .notice ul {
