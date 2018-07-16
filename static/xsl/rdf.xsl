@@ -81,7 +81,7 @@
             <div class="container">
               <div class="columns">
                 <address class="column is-one-third-desktop">
-                  <p class="author is-size-3">
+                  <p class="author is-size-3" style="margin:0.25rem 0 0.75rem">
                     <a href="https://rss.wor.jp/">
                       <img class="icon-rss" src="/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
                       <img class="logo-rss" src="/img/logo.svg" alt="RSS愛好会" />
