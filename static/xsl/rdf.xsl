@@ -10,6 +10,14 @@
       <head>
         <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://rss.wor.jp/_nuxt/app.css" />
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-1744748-8" />
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-1744748-8');
+        </script>
+        <script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
         <title><xsl:value-of select="/rdf:RDF/rss:channel/rss:title" /></title>
       </head>
       <body>
@@ -44,6 +52,12 @@
               </div>
             </section>
             <section class="contents">
+              <section class="ad container">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0248545174327416" data-ad-slot="5977540638" data-ad-format="auto" />
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </section>
               <section class="subscription container">
                 <xsl:variable name="channel-link" select="(/rdf:RDF/rss:channel/rss:altlink)" />
                 <p class="buttons-feed-reader buttons">
@@ -74,6 +88,28 @@
                     </p>
                   </section>
                 </xsl:for-each>
+              </section>
+              <section class="ad container">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0248545174327416" data-ad-slot="8622502386" data-ad-format="auto" />
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </section>
+              <section class="notice container">
+                <h2 class="title is-4">
+                  注意事項
+                </h2>
+                <ul>
+                  <li>
+                    本サービスに対する異常なトラフィックを検知した場合、アクセス遮断等の措置を実施する場合があります。
+                  </li>
+                  <li>
+                    記事本文の配信については、著作権やトラフィック等の観点から実施しておりませんのでご了承ください。
+                  </li>
+                  <li>
+                    本サービスは、配信するフィードに運営者からのお知らせを挿入する場合があります。
+                  </li>
+                </ul>
               </section>
             </section>
           </article>
