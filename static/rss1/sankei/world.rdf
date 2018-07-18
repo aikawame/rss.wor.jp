@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://rss.wor.jp/xsl/rdf.xsl"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel rdf:about="https://rss.wor.jp/?ref=oldfeed">
+    <title>産経新聞 旧フィード</title>
+    <link>https://rss.wor.jp/</link>
+    <altlink>https%3A%2F%2Fwww.sankei.com%2F</altlink>
+    <description>産経新聞の旧フィードです。（提供：RSS愛好会 https://rss.wor.jp/）</description>
+    <dc:date>2018-07-20T00:00:00+09:00</dc:date>
+    <dc:language>ja</dc:language>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="https://rss.wor.jp/?ref=oldfeed"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="https://rss.wor.jp/?ref=oldfeed">
+    <title>【重要】RSS愛好会 フィードURL変更のお知らせ</title>
+    <link>https://rss.wor.jp/?ref=oldfeed</link>
+    <description>
+      RSS愛好会はこの度、サービスの大規模リニューアルを実施しました。
+      その一環として、全てのフィードURLを変更し、カテゴリーを整理しました。
+      従来のフィードは廃止されましたので、お手数ではありますが現在当サイトに掲載中の新しいフィードへの移行をお願いいたします。
+    </description>
+    <dc:date>2018-07-20T00:00:00+09:00</dc:date>
+  </item>
+</rdf:RDF>

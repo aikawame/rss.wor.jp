@@ -9,7 +9,7 @@
     <html>
       <head>
         <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/_nuxt/app.css" />
+        <link rel="stylesheet" href="https://rss.wor.jp/_nuxt/app.css" />
         <title><xsl:value-of select="/rdf:RDF/rss:channel/rss:title" /></title>
       </head>
       <body>
@@ -19,15 +19,15 @@
               <div class="container">
                 <div class="navbar-brand">
                   <a class="navbar-item is-size-3" href="https://rss.wor.jp/">
-                    <img class="icon-rss" src="/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
-                    <img class="logo-rss" src="/img/logo.svg" alt="RSS愛好会" />
+                    <img class="icon-rss" src="https://rss.wor.jp/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+                    <img class="logo-rss" src="https://rss.wor.jp/img/logo.svg" alt="RSS愛好会" />
                   </a>
                 </div>
                 <div class="navbar-menu">
                   <div class="navbar-end">
                     <span class="navbar-item">
                       <a class="button" href="https://worklover.wor.jp/">
-                        <img class="logo-worklover" src="/img/logo_worklover.svg" alt="ワクラバ" />
+                        <img class="logo-worklover" src="https://rss.wor.jp/img/logo_worklover.svg" alt="ワクラバ" />
                       </a>
                     </span>
                   </div>
@@ -83,8 +83,8 @@
                 <address class="column is-one-third-desktop">
                   <p class="author is-size-3" style="margin:0.25rem 0 0.75rem">
                     <a href="https://rss.wor.jp/">
-                      <img class="icon-rss" src="/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
-                      <img class="logo-rss" src="/img/logo.svg" alt="RSS愛好会" />
+                      <img class="icon-rss" src="https://rss.wor.jp/img/icon.svg" alt="RSS愛好会アイコン" aria-hidden="true" />
+                      <img class="logo-rss" src="https://rss.wor.jp/img/logo.svg" alt="RSS愛好会" />
                     </a>
                   </p>
                   <p class="copyright">
