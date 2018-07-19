@@ -56,10 +56,11 @@ module.exports = {
     '~/assets/css/default.scss',
     '~/assets/css/icon.css'
   ],
+  generate: {
+    fallback: true
+  },
   modules: [
-    [
-      '@nuxtjs/google-adsense', { id: 'ca-pub-0248545174327416', analyticsUacct: 'UA-1744748-8', analyticsDomainName: 'rss.wor.jp' },
-      '@nuxtjs/google-analytics', { id: 'UA-1744748-8' }
-    ]
+    ['@nuxtjs/google-adsense', { id: 'ca-pub-0248545174327416', analyticsUacct: 'UA-1744748-8', analyticsDomainName: 'rss.wor.jp' }],
+    ['@nuxtjs/google-analytics', { id: 'UA-1744748-8' }]
   ]
 };
