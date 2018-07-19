@@ -59,12 +59,13 @@
                 </script>
               </section>
               <section class="subscription container">
-                <xsl:variable name="channel-link" select="(/rdf:RDF/rss:channel/rss:altlink)" />
+                <xsl:variable name="encoded-url" select="(/rdf:RDF/rss:channel/@encoded)" />
+                <xsl:variable name="self-url" select="(/rdf:RDF/rss:channel/@rdf:about)" />
                 <p class="buttons-feed-reader buttons">
-                  <a class="button is-small is-feedly" href="https://feedly.com/i/subscription/feed%2F{$channel-link}" target="blank">
+                  <a class="button is-small is-feedly" href="https://feedly.com/i/subscription/feed%2F{$encoded-url}" target="blank">
                     <i class="icon-feedly" aria-hidden="true" />&#160;Feedlyで購読
                   </a>
-                  <a class="button is-small is-inoreader" href="http://www.inoreader.com/feed/{$channel-link}" target="blank">
+                  <a class="button is-small is-inoreader" href="http://www.inoreader.com/feed/{$self-url}" target="blank">
                     <i class="icon-inoreader" aria-hidden="true" />&#160;Inoreaderで購読
                   </a>
                 </p>
