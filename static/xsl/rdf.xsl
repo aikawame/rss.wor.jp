@@ -10,6 +10,7 @@
       <head>
         <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://rss.wor.jp/_nuxt/app.css" />
+        <link rel="icon" type="image/x-icon" href="https://rss.wor.jp/favicon.ico" />
         <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-1744748-8" />
         <script>
           window.dataLayer = window.dataLayer || [];
