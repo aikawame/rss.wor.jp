@@ -19,7 +19,7 @@
           gtag('config', 'UA-1744748-8');
         </script>
         <script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-        <title><xsl:value-of select="/rdf:RDF/rss:channel/rss:title" /></title>
+        <title><xsl:value-of select="/rdf:RDF/rss:channel/rss:title" /> - RSS愛好会</title>
       </head>
       <body>
         <div class="default">
