@@ -61,6 +61,11 @@ module.exports = {
   },
   modules: [
     ['@nuxtjs/google-adsense', { id: 'ca-pub-0248545174327416', analyticsUacct: 'UA-1744748-8', analyticsDomainName: 'rss.wor.jp' }],
-    ['@nuxtjs/google-analytics', { id: 'UA-1744748-8' }]
-  ]
+    ['@nuxtjs/google-analytics', { id: 'UA-1744748-8' }],
+    '@nuxtjs/sitemap'
+  ],
+  sitemap: {
+    hostname: 'https://rss.wor.jp',
+    generate: true
+  }
 };
