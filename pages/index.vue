@@ -7,7 +7,7 @@
           <span class="subtitle is-size-4">RSSを未来へ繋げるために</span>
         </h1>
         <p>
-          昨今減少しつつあるRSSフィード配信を、本家サイトに代わって行っています。
+          RSSフィード配信を本家サイトに代わって行っています。
         </p>
       </div>
     </section>
