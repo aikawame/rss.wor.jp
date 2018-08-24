@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '産経・読売・日経新聞などのRSSフィードを配信しています。' },
+      { hid: 'description', name: 'description', content: '産経・読売・日経などの各新聞・47NEWS・ロイター・ブルームバーグなどのRSSフィードを配信しています。' },
       { hid: 'keywords', name: 'keywords', content: 'RSS,新聞,ニュース,産経,SANKEI,読売,YOMIURI,日経,NIKKEI,時事通信,47NEWS,ロイター,Reuters,ブルームバーグ,Bloomberg' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'RSS愛好会' },
