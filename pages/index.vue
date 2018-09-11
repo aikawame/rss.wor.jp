@@ -60,7 +60,7 @@ export default {
       current: 1
     };
   },
-  mounted() {
+  created() {
     let db_path = process.env.NODE_ENV === 'production' ? 'db' : 'db_dev';
     axios.get('https://assets.wor.jp/rss/' + db_path + '/show_categories.json').then(res => {
       this.categories = res.data;
