@@ -38,12 +38,12 @@
           </address>
           <ul class="column is-one-third-desktop">
             <li>
-              <a href="https://worklover.wor.jp/privacy">
+              <a href="/privacy">
                 個人情報保護方針
               </a>
             </li>
             <li>
-              <a href="https://worklover.wor.jp/disclaimer">
+              <a href="/disclaimer">
                 免責事項
               </a>
             </li>
