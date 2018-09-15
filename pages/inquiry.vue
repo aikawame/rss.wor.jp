@@ -55,88 +55,62 @@
         </form>
       </section>
     </section>
-    <div class="modal" :class="{ 'is-active': modalShown }">
-      <div class="modal-background">
-      </div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">送信確認</p>
-          <button class="delete" aria-label="close" @click="modalShown = false"></button>
-        </header>
-        <section class="modal-card-body">
-          <p class="preamble">
-            以下の内容を送信してよろしいですか？
-          </p>
-          <dl>
-            <dt class="is-normal">
-              <label class="label">お名前</label>
-            </dt>
-            <dd class="preamble">
-              {{ nameForView }}
-            </dd>
-            <dt class="is-normal">
-              <label class="label">メールアドレス</label>
-            </dt>
-            <dd class="preamble">
-              {{ emailForView }}
-            </dd>
-            <dt class="is-normal">
-              <label class="label">内容</label>
-            </dt>
-            <dd>
-              {{ body }}
-            </dd>
-          </dl>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-info" @click="sendEmail">OK</button>
-          <button class="button" @click="modalShown = false">キャンセル</button>
-        </footer>
-      </div>
-    </div>
+    <inquiry-confirm
+      :name="name"
+      :email="email"
+      :subject="subject"
+      :body="body"
+      v-if="isModalActive"
+      @close="toggleModal"
+      @done="initForm"
+    ></inquiry-confirm>
   </article>
 </template>
 
 <script>
-import axios from 'axios'
+import InquiryConfirm from "~/components/InquiryConfirm.vue";
 
 export default {
+  components: {
+    InquiryConfirm
+  },
   data() {
     return {
       name: null,
       email: null,
       subject: '【RSS愛好会】お問い合わせ',
       body: null,
-      validated: false,
-      modalShown: false
+      isValidating: false,
+      isModalActive: false
     }
   },
   computed: {
     isValidEmail() {
       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return !this.validated || !this.email || re.test(this.email);
+      return !this.isValidating || !this.email || re.test(this.email);
     },
     isValidBody() {
-      return !this.validated || this.body;
+      return !this.isValidating || this.body;
     },
     isValidForm() {
       return this.isValidEmail && this.isValidBody;
-    },
-    nameForView() {
-      return this.name || '（匿名）';
-    },
-    emailForView() {
-      return this.email || '（空欄）';
     }
   },
   methods: {
+    initForm() {
+      this.name = null;
+      this.email = null;
+      this.body = null;
+      this.isValidating = false;
+      this.isModalActive = false;
+    },
     checkForm(e) {
-      this.validated = true;
-      if (this.isValidForm) this.modalShown = true;
+      this.isValidating = true;
+      if (this.isValidForm) this.toggleModal();
       e.preventDefault();
     },
-    sendEmail() {
-      this.modalShown = false;
+    toggleModal() {
+      this.isModalActive = !this.isModalActive;
     }
   }
 }
@@ -146,13 +120,5 @@ export default {
 form {
   margin: auto;
   max-width: 640px;
-}
-
-.modal-card-foot {
-  display: flex;
-}
-
-.modal-card-foot button {
-  flex-grow: 1;
 }
 </style>
