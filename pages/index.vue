@@ -48,7 +48,7 @@
 
 <script>
 import axios from 'axios';
-import FeedCategory from '~/components/FeedCategory.vue'
+import FeedCategory from '~/components/FeedCategory.vue';
 
 export default {
   components: {
