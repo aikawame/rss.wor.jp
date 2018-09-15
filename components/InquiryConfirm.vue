@@ -82,7 +82,7 @@ export default {
   methods: {
     sendEmail() {
       this.status = 'doing';
-      axios.post('http://localhost:8000', {
+      axios.post('https://iq24yooluk.execute-api.ap-northeast-1.amazonaws.com/api/', {
         name: this.nameForView,
         email: this.email,
         subject: this.subject,
@@ -90,7 +90,7 @@ export default {
       }).then(() => {
         this.status = 'done';
         this.notification = '送信が完了しました。';
-      }).catch((e) => {
+      }).catch(() => {
         this.status = 'error';
         this.notification = '送信に失敗しました。暫くしてからもう一度お試しください。';
       });
