@@ -12,10 +12,12 @@
       </div>
     </section>
     <section class="contents">
-      <section class="notification container is-normal">
-        RSS愛好会では、RSS配信のご要望を随時募集しています。
-        コンテンツ量の多いサイトおよび大手サイトから優先的に対応します。
-        まずはお気軽に<a href="/inquiry">フォーム</a>または<a href="https://twitter.com/intent/tweet?screen_name=aikawame" target="blank">Twitter</a>からサイト名とURLをお知らせください。
+      <section class="information container">
+        <p class="notification is-normal">
+          RSS愛好会では、RSS配信のご要望を随時募集しています。
+          コンテンツ量の多いサイトおよび大手サイトから優先的に対応します。
+          まずはお気軽に<a href="/inquiry">フォーム</a>または<a href="https://twitter.com/intent/tweet?screen_name=aikawame" target="blank">Twitter</a>からサイト名とURLをお知らせください。
+        </p>
       </section>
       <section class="ad container">
         <adsbygoogle ad-slot="5977540638" />
