@@ -48,7 +48,7 @@
               </a>
             </li>
             <li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcdNlZSANueBFqjTZQzVrQsxoqalHm8c_Jdg6K3lBrieu9DQ/viewform?usp=sf_link">
+              <a href="/inquiry">
                 お問い合わせ
               </a>
             </li>
