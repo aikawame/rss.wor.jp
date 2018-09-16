@@ -12,7 +12,7 @@
       </div>
     </section>
     <section class="contents">
-      <section class="information container">
+      <section class="information container preamble">
         <p class="notification is-normal">
           RSS愛好会では、RSS配信のご要望を随時募集しています。
           コンテンツ量の多いサイトおよび大手サイトから優先的に対応します。
