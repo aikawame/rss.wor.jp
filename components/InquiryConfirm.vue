@@ -25,7 +25,7 @@
             <label class="label">内容</label>
           </dt>
           <dd class="preamble">
-            {{ body }}
+            <span class="pre">{{ body }}</span>
           </dd>
         </dl>
         <p class="notification" :class="notificationClass" v-if="notification">
@@ -111,5 +111,9 @@ export default {
 
 .modal-card-foot button {
   flex-grow: 1;
+}
+
+.pre {
+  white-space: pre;
 }
 </style>
