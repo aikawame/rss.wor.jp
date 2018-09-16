@@ -54,7 +54,7 @@
 import axios from 'axios'
 
 export default {
-  props: ['name', 'email', 'subject', 'body'],
+  props: ['name', 'email', 'subject', 'body', 'grcres'],
   data() {
     return {
       notification: '以上の内容を送信してよろしいですか？',
@@ -86,7 +86,8 @@ export default {
         name: this.nameForView,
         email: this.email,
         subject: this.subject,
-        body: this.body
+        body: this.body,
+        grcres: this.grcres
       }).then(() => {
         this.status = 'done';
         this.notification = '送信が完了しました。';

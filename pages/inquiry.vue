@@ -51,6 +51,12 @@
               </textarea>
             </dd>
           </dl>
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+          <div
+            class="g-recaptcha preamble"
+            :class="{ 'is-danger': !isValidGrcres }"
+            data-sitekey="6Lfhe3AUAAAAAMvWuLYE-a5EotqHSHsv7xbs6ce7"
+          ></div>
           <input class="button is-info is-fullwidth" type="submit" value="確認" />
         </form>
       </section>
@@ -60,6 +66,7 @@
       :email="email"
       :subject="subject"
       :body="body"
+      :grcres="grcres"
       v-if="isModalActive"
       @close="toggleModal"
       @done="initForm"
@@ -80,6 +87,7 @@ export default {
       email: null,
       subject: '【RSS愛好会】お問い合わせ',
       body: null,
+      grcres: null,
       isValidating: false,
       isModalActive: false
     }
@@ -92,8 +100,11 @@ export default {
     isValidBody() {
       return !this.isValidating || this.body;
     },
+    isValidGrcres() {
+      return !this.isValidating || this.grcres;
+    },
     isValidForm() {
-      return this.isValidEmail && this.isValidBody;
+      return this.isValidEmail && this.isValidBody && this.isValidGrcres;
     }
   },
   methods: {
@@ -106,6 +117,7 @@ export default {
     },
     checkForm(e) {
       this.isValidating = true;
+      this.grcres = grecaptcha.getResponse();
       if (this.isValidForm) this.toggleModal();
       e.preventDefault();
     },
@@ -120,5 +132,15 @@ export default {
 form {
   margin: auto;
   max-width: 640px;
+}
+
+.g-recaptcha {
+  padding-bottom: 1px;
+}
+
+.g-recaptcha.is-danger {
+  border: #ff3860 solid;
+  border-width: 0 0 1px;
+  padding-bottom: 0;
 }
 </style>
