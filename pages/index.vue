@@ -12,6 +12,13 @@
       </div>
     </section>
     <section class="contents">
+      <section class="information container preamble">
+        <p class="notification is-normal">
+          現在、産経新聞の速報を取得できなくなっております。
+          対応には大幅なシステム改修が必要となるため、現時点で再開の目処は立っておりません。
+          ご不便をお掛けしますが、個別のフィードをご利用いただくようお願いいたします。
+        </p>
+      </section>
       <section class="ad container">
         <adsbygoogle ad-slot="5977540638" />
       </section>
