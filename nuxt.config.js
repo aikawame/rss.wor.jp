@@ -34,10 +34,8 @@ module.exports = {
   build: {
     extractCSS: true,
     filenames: {
-      css: 'app.css?v=[contenthash]'
+      css: ({ isDev }) => isDev ? '[name].css' : '[name].css?v=[contenthash]'
     },
-    // v2では不要になる
-    vendor: ['axios'],
     /*
     ** Run ESLint on save
     */
@@ -65,7 +63,6 @@ module.exports = {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'https://rss.wor.jp',
-    generate: true
+    hostname: 'https://rss.wor.jp'
   }
 };
