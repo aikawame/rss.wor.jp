@@ -70,24 +70,6 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 769px) {
-  .hero {
-    background: url("/img/icon.svg"), linear-gradient(#fa9d39, #e3702d);
-    background-position-y: 100%;
-    background-repeat: no-repeat;
-  }
-
-  h1 .subtitle::before {
-    content: " ─ ";
-  }
-}
-
-@media (max-width: 768px) {
-  h1 .subtitle {
-    display: block;
-  }
-}
-
 .categories-enter-active,
 .catgories-leave-active {
   transition: opacity 0.5s;
