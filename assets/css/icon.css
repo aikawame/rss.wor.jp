@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:
-    url('/fonts/icon.ttf?td1jm4') format('truetype'),
-    url('/fonts/icon.woff?td1jm4') format('woff'),
-    url('/fonts/icon.svg?td1jm4#icon') format('svg');
+  src:  url('/fonts/icon.eot?p9xswp');
+  src:  url('/fonts/icon.eot?p9xswp#iefix') format('embedded-opentype'),
+    url('/fonts/icon.ttf?p9xswp') format('truetype'),
+    url('/fonts/icon.woff?p9xswp') format('woff'),
+    url('/fonts/icon.svg?p9xswp#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,6 +38,9 @@
 }
 .icon-inoreader:before {
   content: "\e909";
+}
+.icon-kyash:before {
+  content: "\e90a";
 }
 .icon-qiita:before {
   content: "\e90b";
