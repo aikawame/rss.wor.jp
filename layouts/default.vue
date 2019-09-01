@@ -33,7 +33,7 @@
               </a>
             </p>
             <p class="copyright">
-              &copy; 2014-2018 <a href="https://worklover.wor.jp/">WorkLover</a>
+              &copy; 2018 <a href="https://worklover.wor.jp/">WorkLover</a>
             </p>
           </address>
           <ul class="column is-one-third-desktop">
