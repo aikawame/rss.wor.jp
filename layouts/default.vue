@@ -38,6 +38,11 @@
           </address>
           <ul class="column is-one-third-desktop">
             <li>
+              <a href="/about">
+                RSS愛好会について
+              </a>
+            </li>
+            <li>
               <a href="/privacy">
                 個人情報保護方針
               </a>
