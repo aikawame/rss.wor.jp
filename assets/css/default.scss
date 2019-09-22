@@ -16,6 +16,8 @@ $hateb: #00a4de;
 $hateb-invert: findColorInvert($hateb);
 $inoreader: #03a9f4;
 $inoreader-invert: findColorInvert($inoreader);
+$kyash: #2ad1ff;
+$kyash-invert: #ffffff;
 $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 
@@ -26,6 +28,7 @@ $addColors: (
   "feedly": ($feedly, $feedly-invert),
   "hateb": ($hateb, $hateb-invert),
   "inoreader": ($inoreader, $inoreader-invert),
+  "kyash": ($kyash, $kyash-invert),
   "twitter": ($twitter, $twitter-invert)
 );
 
