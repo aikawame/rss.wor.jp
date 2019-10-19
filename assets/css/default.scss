@@ -8,17 +8,17 @@ $family-sans-serif: "Trebuchet MS", sans-serif;
 
 $primary: #fa9d39;
 
-$facebook: #4267b2;
+$facebook: #1877f2;
 $facebook-invert: findColorInvert($facebook);
-$feedly: #20b446;
+$feedly: #2db24c;
 $feedly-invert: findColorInvert($feedly);
 $hateb: #00a4de;
 $hateb-invert: findColorInvert($hateb);
 $inoreader: #03a9f4;
 $inoreader-invert: findColorInvert($inoreader);
-$kyash: #2ad1ff;
+$kyash: #29d1ff;
 $kyash-invert: #ffffff;
-$twitter: #55acee;
+$twitter: #1da1f2;
 $twitter-invert: findColorInvert($twitter);
 
 @import "~bulma/sass/utilities/derived-variables.sass";
