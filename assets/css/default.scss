@@ -34,6 +34,8 @@ $addColors: (
 
 $colors: map-merge($colors, $addColors);
 
+$box-shadow: 0 0 1.5px rgba($scheme-invert, 0.5);
+$card-shadow: 0 0 1.5px rgba($scheme-invert, 0.5);
 $panel-shadow: 0;
 $variable-columns: false;
 @import "~bulma/bulma";
