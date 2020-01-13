@@ -34,6 +34,7 @@ $addColors: (
 
 $colors: map-merge($colors, $addColors);
 
+$panel-shadow: 0;
 $variable-columns: false;
 @import "~bulma/bulma";
 
@@ -177,6 +178,7 @@ h2::before {
   }
 
   .website {
+    border: 1px solid #ededed;
     break-inside: avoid;
   }
 }
