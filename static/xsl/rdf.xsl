@@ -157,7 +157,7 @@
                   </p>
                   <p class="buttons-facebook has-text-right-tablet">
                     <a class="button is-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://rss.wor.jp/" target="blank">
-                      <i class="icon-facebook-f" aria-hidden="true" />&#160;シェア
+                      <i class="icon-facebook" aria-hidden="true" />&#160;シェア
                     </a>
                     <a class="button is-hateb" href="https://b.hatena.ne.jp/entry/https://rss.wor.jp/" target="blank">
                       <i class="icon-hateb" aria-hidden="true" />&#160;ブックマーク
