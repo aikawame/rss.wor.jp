@@ -12,6 +12,16 @@
       </div>
     </section>
     <section class="contents">
+      <section class="announce container">
+        <h2 class="title is-4">
+          お知らせ
+        </h2>
+        <ul>
+          <li>
+            <a href="/announce#20201022-01">2020/10/22 更新間隔の適正化につきまして</a>
+          </li>
+        </ul>
+      </section>
       <section class="ad container">
         <adsbygoogle ad-slot="5977540638" />
       </section>
@@ -80,10 +90,12 @@ export default {
   opacity: 0;
 }
 
+.announce ul,
 .notice ul {
   padding-left: 1rem;
 }
 
+.announce li,
 .notice li {
   list-style-type: square;
 }

@@ -126,7 +126,7 @@
                     </a>
                   </p>
                   <p class="copyright">
-                    &#169; 2014-2018 <a href="https://worklover.wor.jp/">WorkLover</a>
+                    &#169; 2014 <a href="https://worklover.wor.jp/">WorkLover</a>
                   </p>
                 </address>
                 <ul class="column is-one-third-desktop">

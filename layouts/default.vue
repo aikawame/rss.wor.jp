@@ -33,7 +33,7 @@
               </a>
             </p>
             <p class="copyright">
-              &copy; 2018 <a href="https://worklover.wor.jp/">WorkLover</a>
+              &copy; 2014 <a href="https://worklover.wor.jp/">WorkLover</a>
             </p>
           </address>
           <ul class="column is-one-third-desktop">
@@ -50,6 +50,11 @@
             <li>
               <a href="/disclaimer">
                 免責事項
+              </a>
+            </li>
+            <li>
+              <a href="/announce">
+                お知らせ
               </a>
             </li>
             <li>
