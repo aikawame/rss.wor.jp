@@ -131,17 +131,27 @@
                 </address>
                 <ul class="column is-one-third-desktop">
                   <li>
-                    <a href="https://worklover.wor.jp/privacy">
+                    <a href="https://rss.wor.jp/about">
+                      RSS愛好会について
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rss.wor.jp/privacy">
                       個人情報保護方針
                     </a>
                   </li>
                   <li>
-                    <a href="https://worklover.wor.jp/disclaimer">
+                    <a href="https://rss.wor.jp/disclaimer">
                       免責事項
                     </a>
                   </li>
                   <li>
-                    <a href="https://worklover.wor.jp/inquiry">
+                    <a href="https://rss.wor.jp/announce">
+                      お知らせ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://rss.wor.jp/inquiry">
                       お問い合わせ
                     </a>
                   </li>
