@@ -43,20 +43,6 @@
           </p>
         </section>
         <section class="article box">
-          <h2 class="title is-4">運営者に投げ銭する</h2>
-          <p>
-            ご支援ありがとうございます。投げ銭は<a href="https://kyash.co">Kyash</a>にて受け付けております。
-          </p>
-          <p>
-            <a class="button is-kyash" href="kyash://qr/u/696248677615479630">
-              <i class="icon-kyash" aria-hidden="true"></i>&nbsp;アプリから投げ銭する
-            </a>
-          </p>
-          <p>
-            <img src="/img/kyash_qr.jpg" alt="Kyash QRコード" width="200" />
-          </p>
-        </section>
-        <section class="article box">
           <h2 id="20200922-01" class="title is-4">2020/09/22 ブルームバーグの更新エラーにつきまして</h2>
           <p>
             最近ブルームバーグのサイト構造が一部変更された影響で、更新エラーが発生しておりました。
@@ -88,6 +74,17 @@
           </p>
           <p>
             本日新しいサイト構造への対応が完了しましたので、現在は正常にフィード更新が行われております。
+          </p>
+        </section>
+        <section class="article box">
+          <h2 class="title is-4">運営を支援する</h2>
+          <p>
+            ありがとうございます。運営へのご支援はAmazonの<a href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">ほしい物リスト</a>にて受け付けております。
+          </p>
+          <p>
+            <a class="button is-amazon" href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">
+              <i class="icon-amazon" aria-hidden="true"></i>&nbsp;支援する
+            </a>
           </p>
         </section>
       </section>

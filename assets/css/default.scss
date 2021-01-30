@@ -8,6 +8,8 @@ $family-sans-serif: "Trebuchet MS", sans-serif;
 
 $primary: #fa9d39;
 
+$amazon: #ff9900;
+$amazon-invert: findColorInvert($amazon);
 $facebook: #1877f2;
 $facebook-invert: findColorInvert($facebook);
 $feedly: #2db24c;
@@ -24,6 +26,7 @@ $twitter-invert: findColorInvert($twitter);
 @import "~bulma/sass/utilities/derived-variables.sass";
 
 $addColors: (
+  "amazon": ($amazon, $amazon-invert),
   "facebook": ($facebook, $facebook-invert),
   "feedly": ($feedly, $feedly-invert),
   "hateb": ($hateb, $hateb-invert),
