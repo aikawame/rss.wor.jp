@@ -64,5 +64,6 @@ module.exports = {
   ],
   sitemap: {
     hostname: 'https://rss.wor.jp'
-  }
+  },
+  target: 'static'
 };
