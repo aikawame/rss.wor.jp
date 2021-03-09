@@ -16,6 +16,17 @@
 
         </p>
         <section class="article box">
+          <h2 class="title is-4">運営を支援する</h2>
+          <p>
+            ありがとうございます。運営へのご支援はAmazonの<a href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">ほしい物リスト</a>にて受け付けております。
+          </p>
+          <p>
+            <a class="button is-amazon" href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">
+              <i class="icon-amazon" aria-hidden="true"></i>&nbsp;支援する
+            </a>
+          </p>
+        </section>
+        <section class="article box">
           <h2 class="title is-4">RSS愛好会とは</h2>
           <p>
             RSS愛好会は、個人によるRSSフィード配信サービスです。
