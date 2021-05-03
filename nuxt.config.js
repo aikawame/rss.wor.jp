@@ -32,6 +32,14 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    babel:{
+      plugins: [
+        [
+          '@babel/plugin-proposal-private-methods',
+          { loose: true }
+        ]
+      ]
+    },
     extractCSS: true,
     filenames: {
       css: ({ isDev }) => isDev ? '[name].css' : '[name].css?v=[contenthash]'
