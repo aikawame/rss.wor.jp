@@ -18,7 +18,7 @@
         </h2>
         <ul>
           <li>
-            <a href="/announce">2020/10/22 更新間隔の適正化につきまして</a>
+            <a href="/announce">2021/05/15 ご支援の御礼</a>
           </li>
         </ul>
       </section>
